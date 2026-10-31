@@ -1,0 +1,22 @@
+{
+  "name": "Тропари двунадесятых праздников",
+  "short_name": "Тропари",
+  "description": "Аудиозаписи и тексты тропарей двунадесятых праздников",
+  "start_url": "./12_Тропари.html",
+  "display": "standalone",
+  "background_color": "#F9F6F0",
+  "theme_color": "#8B5A2B",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

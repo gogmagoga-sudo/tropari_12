@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8B5A2B">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Тропари">
+	
+    <title>Тропари двунадесятых праздников</title>
+    <style>
+        :root {
+            --primary: #8B5A2B; /* Церковный золотисто-коричневый */
+            --bg-color: #F9F6F0;
+            --card-bg: #FFFFFF;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .player-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+            transition: transform 0.2s;
+        }
+
+        .player-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .holiday-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .trop_text {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.1em;
+            color: #444;
+            margin-bottom: 15px;
+            white-space: pre-line; /* Сохраняет переносы строк */
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        /* Стилизация аудиоплеера для WebKit (Chrome, Safari) */
+        audio::-webkit-media-controls-panel {
+            background-color: #f0e6d2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Тропари двунадесятых праздников</h1>
+    <div class="subtitle">Аудиозаписи и тексты</div>
+
+    <!-- 1. Рождество Богородицы -->
+    <div class="player-card">
+        <div class="holiday-name">Рождество Пресвятой Богородицы (8 сентября)</div>
+        <div class="trop_text">Тропарь, глас 4:
+Рождество́ Твое́, Богоро́дице Де́во,/ ра́дость возвести́ всей вселе́нней:/ из Тебе́ бо возсия́ Со́лнце пра́вды Христо́с Бог наш,/ и, разруши́в кля́тву, даде́ благослове́ние,// и, упраздни́в сме́рть, дарова́ нам живо́т ве́чный.</div>
+        <audio controls preload="none">
+            <source src="tropar-rozhdestva-bogorodicy.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 2. Воздвижение Креста -->
+    <div class="player-card">
+        <div class="holiday-name">Воздвижение Честного и Животворящего Креста Господня (27 сентября)</div>
+        <div class="trop_text">Тропарь, глас 1:
+Спаси́, Го́споди, лю́ди Твоя́/ и благослови́ достоя́ние Твое́,/ побе́ды правосла́вным христиа́ном на сопроти́вныя да́руя// и Твое́ сохраня́я Кресто́м Твои́м жи́тельство.</div>
+        <audio controls preload="none">
+            <source src="tropar-vozdvizheniju-kresta.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 3. Введение во Храм -->
+    <div class="player-card">
+        <div class="holiday-name">Введение во Храм Пресвятой Богородицы (4 декабря)</div>
+        <div class="trop_text">Тропарь, глас 4:
+Днесь благоволе́ния Бо́жия предображе́ние,/ и челове́ков спасе́ния пропове́дание,/ в хра́ме Бо́жии я́сно Де́ва явля́ется,/ и Христа́ всем предвозвеща́ет./ Той и мы велегла́сно возопии́м:// ра́дуйся смотре́ния Зижди́телева исполне́ние.</div>
+        <audio controls preload="none">
+            <source src="tropar-vvedeniju-vo-hram-presvjatoj-bogorodicy.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 4. Рождество Христово -->
+    <div class="player-card">
+        <div class="holiday-name">Рождество Христово (7 января)</div>
+        <div class="trop_text">Тропарь, глас 4:
+Рождество́ Твое́, Христе́ Бо́же наш,/ возсия́ ми́рови свет ра́зума,/ в нем бо звезда́м служа́щии,/ звездо́ю уча́хуся,/ Тебе кла́нятися Со́лнцу Пра́вды,/ и Тебе́ ве́дети с высоты́ восто́ка:// Го́споди, сла́ва Тебе́.</div>
+        <audio controls preload="none">
+            <source src="tropar-rozhdestva-hristova-raif.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 5. Богоявление -->
+    <div class="player-card">
+        <div class="holiday-name">Богоявление (Крещение Господне) (19 января)</div>
+        <div class="trop_text">Тропарь, глас 1:
+Во Иорда́не креща́ющуся Тебе́, Го́споди,/ Тро́ическое яви́ся поклоне́ние:/ Роди́телев бо глас свиде́тельствоваше Тебе́,/ возлю́бленнаго Тя Сы́на имену́я,/ и Дух в ви́де голуби́не,/ изве́ствоваше словесе́ утвержде́ние./ Явле́йся Христе́ Бо́же,// и мир просвеще́й, сла́ва Тебе́.</div>
+        <audio controls preload="none">
+            <source src="tropar-bogojavlenija.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 6. Сретение -->
+    <div class="player-card">
+        <div class="holiday-name">Сретение Господне (15 февраля)</div>
+        <div class="trop_text">Тропарь, глас 1:
+Ра́дуйся, Благода́тная Богоро́дице Де́во,/ из Тебе́ бо возсия́ Со́лнце Пра́вды – Христо́с, Бог наш,/ просвеща́яй су́щия во тьме./ Весели́ся и ты, ста́рче пра́ведный,/ прие́мый во объя́тия Свободи́теля душ на́ших,// да́рующаго нам воскресе́ние.</div>
+        <audio controls preload="none">
+            <source src="tropar-sreteniju-gospodnju.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 7. Благовещение -->
+    <div class="player-card">
+        <div class="holiday-name">Благовещение Пресвятой Богородицы (7 апреля)</div>
+        <div class="trop_text">Тропарь, глас 4:
+Днесь спасе́ния на́шего глави́зна,/ и е́же от ве́ка та́инства явле́ние:/ Сын Бо́жий, Сын Де́вы быва́ет,/ и Гаврии́л благода́ть благовеству́ет./ Те́мже и мы с ним Богоро́дице возопии́м:/ ра́дуйся, Благода́тная,// Госпо́дь с Тобо́ю.</div>
+        <audio controls preload="none">
+            <source src="tropar-blagoveshheniju.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 8. Вход Господень в Иерусалим -->
+    <div class="player-card">
+        <div class="holiday-name">Вход Господень в Иерусалим (воскресенье перед Пасхой)</div>
+        <div class="trop_text">Тропарь, глас 1:
+О́бщее воскресе́ние/ пре́жде Твоея́ стра́сти уверя́я,/ из ме́ртвых воздви́гл еси́ Ла́заря, Христе́ Бо́же./ Те́мже и мы, я́ко о́троцы побе́ды зна́мения нося́ще,/ Тебе́, Победи́телю сме́рти вопие́м:/ оса́нна в вы́шних,// благослове́н Гряды́й во и́мя Госпо́дне.</div>
+        <audio controls preload="none">
+            <source src="056-Tropar-1-Glas-1.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 9. Вознесение -->
+    <div class="player-card">
+        <div class="holiday-name">Вознесение Господне (40-й день по Пасхе)</div>
+        <div class="trop_text">Тропарь, глас 4:
+Возне́слся еси́ во сла́ве, Христе́ Бо́же наш,/ ра́дость сотвори́вый ученико́м,/ обетова́нием Свята́го Ду́ха,/ извеще́нным им бы́вшим благослове́нием,// я́ко Ты еси́ Сын Бо́жий, Изба́витель ми́ра.</div>
+        <audio controls preload="none">
+            <source src="tropar-vozneseniju-gospodnju.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 10. Троица -->
+    <div class="player-card">
+        <div class="holiday-name">День Святой Троицы. Пятидесятница (50-й день после Пасхи)</div>
+        <div class="trop_text">Тропарь, глас 8:
+Благослове́н еси́, Христе́ Бо́же наш,/ И́же прему́дры ловцы́ явле́й,/ низпосла́в им Ду́ха Свята́го,/ и те́ми уловле́й вселе́нную,// Человеколю́бче, сла́ва Тебе́.</div>
+        <audio controls preload="none">
+            <source src="tropar-na-den-svjatoj-troicy.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 11. Преображение -->
+    <div class="player-card">
+        <div class="holiday-name">Преображение Господне (19 августа)</div>
+        <div class="trop_text">Тропарь, глас 7:
+Преобрази́лся еси́ на горе́, Христе́ Бо́же,/ показа́вый ученико́м Твои́м сла́ву Твою́,/ я́коже можа́ху,/ да возсия́ет и нам, гре́шным,/ свет Твой присносу́щный/ моли́твами Богоро́дицы,// Светода́вче, сла́ва Тебе́.</div>
+        <audio controls preload="none">
+            <source src="tropar-preobrazhenija-gospodnja.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+    <!-- 12. Успение -->
+    <div class="player-card">
+        <div class="holiday-name">Успение Пресвятой Богородицы (28 августа)</div>
+        <div class="trop_text">Тропарь, глас 1:
+В рождестве́ де́вство сохрани́ла еси́,/ во успе́нии ми́ра не оста́вила еси́, Богоро́дице,/ преста́вилася еси́ к животу́, Ма́ти су́щи Живота́,// и моли́твами Твои́ми избавля́еши от сме́рти ду́ши на́ша.</div>
+        <audio controls preload="none">
+            <source src="tropar-presvjatoj-bogorodice-v-den-uspenija-ee.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+
+</div>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
+</body>
+</html>
